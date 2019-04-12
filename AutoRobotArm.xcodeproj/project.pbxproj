@@ -12,9 +12,14 @@
 		4D3D6B6D2247B6C800B98332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3D6B6B2247B6C800B98332 /* Main.storyboard */; };
 		4D3D6B6F2247B6C800B98332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3D6B6E2247B6C800B98332 /* Assets.xcassets */; };
 		4D3D6B722247B6C800B98332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3D6B702247B6C800B98332 /* LaunchScreen.storyboard */; };
+		4D4C191F2247D7B40035F45A /* JSONProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C191E2247D7B40035F45A /* JSONProvider.swift */; };
+		791554B7DA0D0E9D70EC3BB4 /* Pods_AutoRobotArm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4AAFB5D5421F35F40F4F18 /* Pods_AutoRobotArm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B4AAFB5D5421F35F40F4F18 /* Pods_AutoRobotArm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoRobotArm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		230F16F7A1DE8894825344D2 /* Pods-AutoRobotArm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoRobotArm.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoRobotArm/Pods-AutoRobotArm.release.xcconfig"; sourceTree = "<group>"; };
+		2EE1FFCBC4DF4888B8CF1978 /* Pods-AutoRobotArm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoRobotArm.release.xcconfig"; path = "Target Support Files/Pods-AutoRobotArm/Pods-AutoRobotArm.release.xcconfig"; sourceTree = "<group>"; };
 		4D3D6B642247B6C800B98332 /* AutoRobotArm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoRobotArm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3D6B672247B6C800B98332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D3D6B692247B6C800B98332 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		4D3D6B6E2247B6C800B98332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3D6B712247B6C800B98332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3D6B732247B6C800B98332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4C191E2247D7B40035F45A /* JSONProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONProvider.swift; sourceTree = "<group>"; };
+		F5DCDAD133E3510C5EF61D08 /* Pods-AutoRobotArm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoRobotArm.debug.xcconfig"; path = "Target Support Files/Pods-AutoRobotArm/Pods-AutoRobotArm.debug.xcconfig"; sourceTree = "<group>"; };
+		F6EEC3772AA8F1EDDBF8C627 /* Pods-AutoRobotArm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoRobotArm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoRobotArm/Pods-AutoRobotArm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791554B7DA0D0E9D70EC3BB4 /* Pods_AutoRobotArm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144E04C6841B09BE2B5DEEDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B4AAFB5D5421F35F40F4F18 /* Pods_AutoRobotArm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D3D6B5B2247B6C800B98332 = {
 			isa = PBXGroup;
 			children = (
 				4D3D6B662247B6C800B98332 /* AutoRobotArm */,
 				4D3D6B652247B6C800B98332 /* Products */,
+				9C55074490AFC2384B484D90 /* Pods */,
+				144E04C6841B09BE2B5DEEDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +75,24 @@
 			children = (
 				4D3D6B672247B6C800B98332 /* AppDelegate.swift */,
 				4D3D6B692247B6C800B98332 /* ViewController.swift */,
+				4D4C191E2247D7B40035F45A /* JSONProvider.swift */,
 				4D3D6B6B2247B6C800B98332 /* Main.storyboard */,
 				4D3D6B6E2247B6C800B98332 /* Assets.xcassets */,
 				4D3D6B702247B6C800B98332 /* LaunchScreen.storyboard */,
 				4D3D6B732247B6C800B98332 /* Info.plist */,
 			);
 			path = AutoRobotArm;
+			sourceTree = "<group>";
+		};
+		9C55074490AFC2384B484D90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDAD133E3510C5EF61D08 /* Pods-AutoRobotArm.debug.xcconfig */,
+				2EE1FFCBC4DF4888B8CF1978 /* Pods-AutoRobotArm.release.xcconfig */,
+				F6EEC3772AA8F1EDDBF8C627 /* Pods-AutoRobotArm.debug.xcconfig */,
+				230F16F7A1DE8894825344D2 /* Pods-AutoRobotArm.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3D6B762247B6C800B98332 /* Build configuration list for PBXNativeTarget "AutoRobotArm" */;
 			buildPhases = (
+				3BF87D8697FAA6E91E8077E2 /* [CP] Check Pods Manifest.lock */,
 				4D3D6B602247B6C800B98332 /* Sources */,
 				4D3D6B612247B6C800B98332 /* Frameworks */,
 				4D3D6B622247B6C800B98332 /* Resources */,
+				138A17F01161D6150C91E224 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +163,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		138A17F01161D6150C91E224 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AutoRobotArm/Pods-AutoRobotArm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMQTT.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoRobotArm/Pods-AutoRobotArm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BF87D8697FAA6E91E8077E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoRobotArm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D3D6B602247B6C800B98332 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +219,7 @@
 			files = (
 				4D3D6B6A2247B6C800B98332 /* ViewController.swift in Sources */,
 				4D3D6B682247B6C800B98332 /* AppDelegate.swift in Sources */,
+				4D4C191F2247D7B40035F45A /* JSONProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +247,7 @@
 /* Begin XCBuildConfiguration section */
 		4D3D6B742247B6C800B98332 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE1FFCBC4DF4888B8CF1978 /* Pods-AutoRobotArm.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -225,6 +309,7 @@
 		};
 		4D3D6B752247B6C800B98332 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6EEC3772AA8F1EDDBF8C627 /* Pods-AutoRobotArm.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -280,6 +365,7 @@
 		};
 		4D3D6B772247B6C800B98332 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE1FFCBC4DF4888B8CF1978 /* Pods-AutoRobotArm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		4D3D6B782247B6C800B98332 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE1FFCBC4DF4888B8CF1978 /* Pods-AutoRobotArm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
